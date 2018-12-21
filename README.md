@@ -12,6 +12,9 @@ beauty,
 you might want to approach forking processes differently 🤓
 (BTW: PRs are welcome!)
 
+Part of this blog post:
+[@dynamicCallable: Unix Tools as Swift Functions](http://www.alwaysrightinstitute.com/swift-dynamic-callable/).
+
 ## Sample tool
 
 The regular Swift Package Manager setup process:
