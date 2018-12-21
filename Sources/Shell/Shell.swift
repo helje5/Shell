@@ -79,7 +79,8 @@ public struct ShellTrampoline {
                 testDirURL = URL(fileURLWithPath: path, relativeTo: self.url)
             }
             else {
-                testDirURL = self.url.appendingPathComponent(path)
+                testDirURL = URL(fileURLWithPath: path)
+                            .appendingPathComponent(path)
             }
             return testDirURL.appendingPathComponent(k)
         }
