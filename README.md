@@ -22,14 +22,14 @@ swift package init --type executable
 ```
 
 Sample `main.swift`:
-```
+```swift
 import Shell
 
 print(shell.host("zeezide.de"))
 ```
 
 Sample `Package.swift`:
-```
+```swift
 // swift-tools-version:5.0
 
 import PackageDescription
