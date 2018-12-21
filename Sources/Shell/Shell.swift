@@ -80,7 +80,6 @@ public struct ShellTrampoline {
             }
             else {
                 testDirURL = URL(fileURLWithPath: path)
-                            .appendingPathComponent(path)
             }
             return testDirURL.appendingPathComponent(k)
         }
