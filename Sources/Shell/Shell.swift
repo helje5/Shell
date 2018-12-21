@@ -29,7 +29,7 @@ public struct ShellPathTrampoline {
     }
 
     @discardableResult
-    func dynamicallyCall(withArguments arguments: [ String ])
+    public func dynamicallyCall(withArguments arguments: [ String ])
          -> Process.FancyResult
     {
         func makeError(code: Int, info: String) -> Process.FancyResult {
