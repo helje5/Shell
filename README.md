@@ -53,16 +53,7 @@ Remember to add the dependency in two places. WET is best!
 > `swift run` and `swift test` patch the `$PATH` to just `/usr/bin`. You
 > may want to run the binary directly to make lookup work properly.
 
-## Install a Swift 5 Snapshot
-
-For this to work, you need to have Swift 5 installed.
-As of today Swift 5 hasn't been released yet, but Apple is providing
-prebuilt Swift 5 development toolchains over at:
-[swift.org](https://swift.org/download/#swift-50-development).
-Just install the toolchain, and select it in the Xcode "Toolchains" menu.
-
-If you are living on the commandline, make sure to call 
-`export TOOLCHAINS=swift` to get access to the selected version.
+For this to work, you need to have Swift 5+ installed.
 
 ## Links
 
