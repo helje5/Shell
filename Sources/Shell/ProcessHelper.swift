@@ -1,12 +1,12 @@
 //  Created by Helge Hess on 21.12.18.
-//  Copyright © 2018 ZeeZide GmbH. All rights reserved.
+//  Copyright © 2018-2020 ZeeZide GmbH. All rights reserved.
 
 import Foundation
 
 extension Process {
   
     public struct FancyResult {
-      // Note that fancy actually :-) Convenience before everything!!!
+      // Not that fancy actually :-) Convenience before everything!!!
     
       public let status     : Int
       public let outputData : Data
@@ -15,14 +15,14 @@ extension Process {
       public var isSuccess  : Bool { return status == 0 }
     
       public var stdout : String {
-        return String(data: outputData, encoding: .utf8) ?? "<binary data>"
+          return String(data: outputData, encoding: .utf8) ?? "<binary data>"
       }
       public var stderr : String {
-        return String(data: errorData, encoding: .utf8) ?? "<binary data>"
+          return String(data: errorData, encoding: .utf8) ?? "<binary data>"
       }
     
       public func split(separator: Character) -> [ Substring ] {
-        return stdout.split(separator: separator)
+          return stdout.split(separator: separator)
       }
 
     }
