@@ -83,7 +83,7 @@ extension Process.FancyResult : CustomStringConvertible {
                 return data.description
             }
             if s.count > 72 {
-                return String(s[..<s.index(s.startIndex, offsetBy: 72)]) + "..."
+                return String(s[..<s.index(s.startIndex, offsetBy: 72)]) + "…"
             }
             return s
         }
