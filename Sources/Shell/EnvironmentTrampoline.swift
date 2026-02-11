@@ -15,6 +15,6 @@
 public struct EnvironmentTrampoline: Sendable {
 
   public subscript(dynamicMember k: String) -> String? {
-    return getenv(k).flatMap { String(cString: $0) }
+    getenv(k).flatMap { String(cString: $0) }
   }
 }
